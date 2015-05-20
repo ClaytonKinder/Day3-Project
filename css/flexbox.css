@@ -1,0 +1,40 @@
+header, section, #header-primary, #header-secondary, #header-logo, #header-nav,
+#article-title-author, #article-interaction, #interaction-comments, #interaction-later, #interaction-share,
+.interaction-text, #aside-author, #aside-author-image, #aside-author-links, #bottom-posts, .bottom-post,
+#footer-wrapper, #footer-info, #footer-nav-wrapper, #footer-nav {
+  display: flex;
+}
+
+header, #aside-author {
+  flex-direction: column;
+}
+
+#header-logo, #header-nav, #header-primary, #article-title-author, .interaction-text,
+#aside-author-image, #footer-info, #footer-nav-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+#article-title-author {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#header-secondary {
+  justify-content: space-around;
+  align-items: center;
+}
+
+section {
+  justify-content: center;
+}
+
+#aside-author-links, #footer-nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-post {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
