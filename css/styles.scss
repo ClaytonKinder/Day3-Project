@@ -192,24 +192,25 @@ ARTICLE
 #interaction-comments,
 #interaction-later,
 #interaction-share {
-  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
 }
 
-.icon1,
-.icon2 {
+#interaction-comments,
+#interaction-later {
   background-color: $darkgreen;
 }
 
-.text1,
-.text2 {
+#interaction-comments:hover,
+#interaction-later:hover {
   background-color: $lightgreen;
 }
 
-.icon3 {
+#interaction-share {
   background-color: $navy2;
 }
 
-.text3 {
+#interaction-share:hover {
   background-color: $darkblue;
 }
 
@@ -315,6 +316,7 @@ BOTTOM
   width: 25%;
   height: 220px;
   color: $navy1;
+  cursor: pointer;
 }
 
 .post1 {

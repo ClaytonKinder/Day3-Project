@@ -142,20 +142,21 @@ ARTICLE
 #interaction-comments,
 #interaction-later,
 #interaction-share {
-  padding: 5px; }
+  margin: 5px;
+  cursor: pointer; }
 
-.icon1,
-.icon2 {
+#interaction-comments,
+#interaction-later {
   background-color: #606A71; }
 
-.text1,
-.text2 {
+#interaction-comments:hover,
+#interaction-later:hover {
   background-color: #A3B3BF; }
 
-.icon3 {
+#interaction-share {
   background-color: #0C3755; }
 
-.text3 {
+#interaction-share:hover {
   background-color: #0A69B1; }
 
 .icon2 i {
@@ -240,7 +241,8 @@ BOTTOM
 .bottom-post {
   width: 25%;
   height: 220px;
-  color: #093552; }
+  color: #093552;
+  cursor: pointer; }
 
 .post1 {
   background: linear-gradient(rgba(64, 135, 191, 0.7), rgba(64, 135, 191, 0.7)), url("../img/surfer.jpg");
