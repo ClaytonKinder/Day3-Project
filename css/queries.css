@@ -1,8 +1,17 @@
-@media screen and (max-width: 859px) {
+@media screen and (max-width: 959px) {
   header {
     height: 175px;
   }
 
+  section {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  section,
+  #bottom {
+    width: 100%;
+  }
   #header-titles h1 {
     font-size: 2.5em;
   }
@@ -42,17 +51,13 @@
     height: 50px;
   }
 
-  section {
-    flex-direction: column;
-  }
-
   #article {
-    width: 90%;
+    width: 100%;
     margin: 0 auto 50px;
   }
 
   #side {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -74,6 +79,7 @@
 
   #aside-ad {
     margin-bottom: 0;
+    width: 60%;
   }
 
   #aside-section {
@@ -81,13 +87,14 @@
   }
 
   #bottom-posts {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 90%;
     margin: 0 auto;
   }
 
   .bottom-post {
-    width: 100%;
+    width: 48%;
     height: 300px;
     margin-bottom: 15px;
   }
@@ -125,11 +132,42 @@
 }
 
 @media screen and (max-width: 600px) {
-  #side {
-    width: 80%;
-  }
-
   #footer-wrapper > * {
     width: 100%;
+  }
+
+  .bottom-post {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  #footer-nav {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  #header-titles h1 {
+    font-size: 2em;
+  }
+
+  #header-titles h4 {
+    font-size: 0.65em;
+    bottom: 5px;
+  }
+
+  #footer-nav {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  #header-titles h1 {
+    font-size: 1.5em;
+  }
+
+  #header-titles h4 {
+    font-size: .45em;
   }
 }

@@ -30,6 +30,9 @@ $lightgray: #A8B7C3;
 $darkgray: #5F6970;
 $lightgreen: #A3B3BF;
 $darkgreen: #606A71;
+$facebook: #445897;
+$twitter: #6A8DC7;
+$instagram: #3F729B;
 
 
 /**************************
@@ -81,11 +84,18 @@ header {
 #header-nav-search {
   margin-left: 5px;
   font-family: 'Oswald', sans-serif;
+  cursor: pointer;
 }
 
 #header-nav-search i {
   position: relative;
   bottom: 2px;
+  transition: all .25s ease;
+}
+
+#header-nav-search:hover > i {
+  -webkit-transform: rotateY(10deg);
+  color: white;
 }
 
 #header-primary {
@@ -270,8 +280,49 @@ SIDE
   color: $lightgray;
 }
 
+#aside-author-links > div {
+  position: relative;
+  cursor: pointer;
+}
+
+#aside-author-links > div > i {
+  position: absolute;
+  font-size: 2em;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  transition: all .25s ease;
+  -webkit-transition: all .25s ease;
+  opacity: 0;
+}
+
+#aside-author-links > div:hover > i {
+  bottom: auto;
+  top: 125%;
+  opacity: 1;
+}
+
+#author-twitter-link:hover,
+#author-twitter-link:hover > i {
+  color: $twitter;
+}
+
+#author-facebook-link:hover,
+#author-facebook-link:hover > i {
+  color: $facebook;
+}
+
+#author-instagram-link:hover,
+#author-instagram-link:hover > i {
+  color: $instagram;
+}
+
 #aside-ad {
-  margin-bottom: 50px;
+  width: 100%;
+  margin: 0 auto 50px;
 }
 
 #aside-ad-text {
@@ -384,6 +435,12 @@ BOTTOM
   font-size: 1.35em;
   font-weight: bold;
   padding: 0 5px;
+  width: 100%;
+  letter-spacing: .05em;
+}
+
+.bottom-post:hover > div {
+  background: linear-gradient($navy1, $navy1);
 }
 
 /**************************
